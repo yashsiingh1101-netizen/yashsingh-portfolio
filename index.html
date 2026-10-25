@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yash Singh | Player Profile</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;600&display=swap">
+<style>
+:root{--bg:#f1f2f8;--surf:#fff;--tx:#14162b;--mut:#565b78;--a:#6a2cf0;--b:#e0127f;--c:#0a8fb0;--bd:#d6d8ea;--glow:rgba(106,44,240,.25);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0b16;--surf:#12142a;--tx:#eaeaff;--mut:#9a9fc4;--a:#9b6bff;--b:#ff3d9a;--c:#27e6ff;--bd:#272a52;--glow:rgba(155,107,255,.35);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a0b16;--surf:#12142a;--tx:#eaeaff;--mut:#9a9fc4;--a:#9b6bff;--b:#ff3d9a;--c:#27e6ff;--bd:#272a52;--glow:rgba(155,107,255,.35);color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Rajdhani",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.5;background-image:linear-gradient(var(--bd) 1px,transparent 1px),linear-gradient(90deg,var(--bd) 1px,transparent 1px);background-size:44px 44px;background-attachment:fixed}
+.w{max-width:1000px;margin:0 auto;padding:0 22px}
+.f{font-family:"Orbitron","Arial Black",system-ui,sans-serif}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:15px}
+nav a{color:var(--mut);text-decoration:none;margin-left:18px;text-transform:uppercase;letter-spacing:.08em}nav a:hover{color:var(--c)}
+.hud{display:inline-block;border:1.5px solid var(--c);color:var(--c);padding:4px 14px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)}
+h1{font-family:"Orbitron","Arial Black",system-ui,sans-serif;font-size:clamp(38px,9vw,84px);line-height:1.02;margin:18px 0 10px;text-transform:uppercase;background:linear-gradient(90deg,var(--a),var(--b),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{padding:56px 0 46px}.hero p{max-width:560px;color:var(--mut);font-size:20px}
+.btn{display:inline-block;margin:20px 12px 0 0;padding:14px 28px;font-family:"Orbitron","Arial Black",sans-serif;font-size:14px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#fff;background:linear-gradient(90deg,var(--a),var(--b));box-shadow:0 0 22px var(--glow);clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);transition:transform .15s}
+.btn:hover{transform:translateY(-3px)}.btn.o{background:none;color:var(--c);box-shadow:inset 0 0 0 2px var(--c);clip-path:none}
+section{padding:46px 0}
+h2{font-family:"Orbitron","Arial Black",sans-serif;font-size:22px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 24px}h2 i{color:var(--b);font-style:normal}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.c{background:var(--surf);border:1px solid var(--bd);border-top:3px solid var(--a);padding:20px;transition:.2s}
+.c:hover{border-top-color:var(--b);box-shadow:0 0 24px var(--glow);transform:translateY(-4px)}
+.c b{font-family:"Orbitron","Arial Black",sans-serif;font-size:12px;color:var(--c)}.c h3{margin:4px 0 6px;font-size:21px}.c p{margin:0;color:var(--mut)}
+.q{background:var(--surf);border:1px solid var(--bd);border-left:4px solid var(--b);padding:16px 20px;margin-bottom:14px}
+.q h3{margin:0;font-size:21px}.q small{color:var(--c);letter-spacing:.08em;text-transform:uppercase}.q ul{margin:8px 0 0;padding-left:18px;color:var(--mut)}
+.s{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px 36px}
+.s div span{display:flex;justify-content:space-between;font-weight:600}
+.bar{height:10px;background:var(--bd);margin-top:4px;overflow:hidden;clip-path:polygon(0 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--a),var(--c));transition:width 1.2s ease}
+.start{text-align:center;border:1.5px dashed var(--c);padding:46px 20px;background:var(--surf)}
+.start h2{margin-bottom:8px}.start p{color:var(--mut);margin:0 auto;max-width:460px}
+.blink{animation:bl 1.1s steps(2) infinite}@keyframes bl{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.blink{animation:none}.bar i,.c{transition:none}}
+footer{padding:26px 0;text-align:center;color:var(--mut);font-size:15px}footer a{color:var(--c)}
+button.btn{border:0;cursor:pointer;font-family:"Orbitron","Arial Black",sans-serif}button.btn.o{border:0}.c .btn{padding:11px 18px;font-size:12px;margin:14px 10px 0 0}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><b class="f">YS//</b><div><a href="#skills">Skills</a><a href="#quests">Quests</a><a href="#stats">Stats</a><a href="#start">Start</a></div></nav>
+
+<header class="hero">
+<span class="hud">Player 1 · New Delhi · Open to work</span>
+<h1>Yash Singh</h1>
+<p><b>Class: Graphic Designer.</b> ATL and BTL branding, social media, video, and photography. I design with clarity, consistency, and purpose.</p>
+<a class="btn" href="https://drive.google.com/drive/folders/1JPet5RKj9_-Cb1R7Vjx2UMOrlOGU2B5t?usp=sharing" target="_blank" rel="noopener">Press start: view work</a>
+<a class="btn o" href="#contact">Hire player</a>
+</header>
+
+<section id="skills">
+<h2><i>//</i> Abilities</h2>
+<div class="g">
+<div class="c"><b>01</b><h3>ATL and BTL Branding</h3><p>Branding for client marketing campaigns, in print and digital.</p></div>
+<div class="c"><b>02</b><h3>Social Media Design</h3><p>Posts and creatives built around each brand's identity.</p></div>
+<div class="c"><b>03</b><h3>Video Editing</h3><p>Planning, shooting, and post-production.</p></div>
+<div class="c"><b>04</b><h3>Jewellery Photography</h3><p>Product shoots and edits for Venus Bangles.</p></div>
+<div class="c"><b>05</b><h3>Editorial and Print</h3><p>Posters, newspaper layouts, magazine ads, and photobooks.</p></div>
+</div>
+</section>
+
+<section id="quests">
+<h2><i>//</i> Quests completed</h2>
+<div class="q"><small>Active quest · Jun 2026 – Present</small><h3>Graphic Design Intern (Remote) · Brandanium</h3><ul><li>ATL and BTL branding materials for client campaigns</li><li>Social media creatives and posts</li><li>Video shooting and editing</li></ul></div>
+<div class="q"><small>Side quest</small><h3>Photographer · Venus Bangles</h3><ul><li>Shot and edited jewellery product photographs</li></ul></div>
+<div class="q"><small>Completed · May 2026 – Jun 2026</small><h3>Graphic Design Intern (Remote) · Gangey Foundation</h3><ul><li>Event posters and promotional materials for awareness campaigns</li><li>Digital and print-ready visuals with Adobe Creative Suite</li></ul></div>
+<div class="q"><small>Level unlocked · 2023 – 2026</small><h3>B.J.M.C. · NISCORT Media College</h3></div>
+</section>
+
+<section id="stats">
+<h2><i>//</i> Skill stats</h2>
+<div class="s" id="bars">
+<div><span>Adobe Photoshop<em>85</em></span><div class="bar"><i data-v="85"></i></div></div>
+<div><span>Adobe InDesign<em>80</em></span><div class="bar"><i data-v="80"></i></div></div>
+<div><span>Adobe Premiere Pro<em>70</em></span><div class="bar"><i data-v="70"></i></div></div>
+<div><span>CorelDraw<em>75</em></span><div class="bar"><i data-v="75"></i></div></div>
+<div><span>QuarkXPress<em>70</em></span><div class="bar"><i data-v="70"></i></div></div>
+<div><span>Photography<em>75</em></span><div class="bar"><i data-v="75"></i></div></div>
+</div>
+</section>
+
+<section id="start">
+<div class="start">
+<h2>Ready for the next level?</h2>
+<p>Posters, layouts, campaign work, and videos are in my portfolio folder.</p>
+<a class="btn" href="https://drive.google.com/drive/folders/1JPet5RKj9_-Cb1R7Vjx2UMOrlOGU2B5t?usp=sharing" target="_blank" rel="noopener"><span class="blink">▶</span> Press start</a>
+<a class="btn o" href="#contact">Contact me</a>
+</div>
+</section>
+
+<section id="contact">
+<h2><i>//</i> Hire player</h2>
+<div class="g">
+<div class="c"><b>EMAIL</b><h3>yashsiingh1101@gmail.com</h3><p><a class="btn" href="https://mail.google.com/mail/?view=cm&to=yashsiingh1101@gmail.com&su=Hiring%20enquiry" target="_blank" rel="noopener">Open Gmail</a><button class="btn o" data-copy="yashsiingh1101@gmail.com">Copy email</button></p></div>
+<div class="c"><b>PHONE</b><h3>8383842421</h3><p><a class="btn" href="https://wa.me/918383842421" target="_blank" rel="noopener">WhatsApp</a><button class="btn o" data-copy="8383842421">Copy number</button></p></div>
+</div>
+<p class="hint" id="cm" style="color:var(--c)"></p>
+</section>
+</div>
+<footer>© 2026 Yash Singh · <a href="mailto:yashsiingh1101@gmail.com">yashsiingh1101@gmail.com</a></footer>
+<script>
+(function(){var bars=document.querySelectorAll('.bar i');function go(){bars.forEach(function(b){b.style.width=b.dataset.v+'%'})}
+if('IntersectionObserver' in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){go();o.disconnect()}},{threshold:.3});o.observe(document.getElementById('bars'))}else{go()}})();
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var t=b.dataset.copy,m=document.getElementById('cm');function ok(){m.textContent='Copied: '+t}function fb(){var x=document.createElement('textarea');x.value=t;x.style.position='fixed';x.style.opacity='0';document.body.appendChild(x);x.select();try{document.execCommand('copy');ok()}catch(e){m.textContent='Please copy manually: '+t}document.body.removeChild(x)}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(ok).catch(fb)}else{fb()}})});
+</script>
+</body>
+</html>
